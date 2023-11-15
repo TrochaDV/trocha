@@ -1,0 +1,89 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('img/Patron_Fondo_Trocha.png');
+    background-size: cover;
+    background-position: center;
+}
+header {
+    background-color: #343E3D;
+    padding: 8px;
+    text-align: start;
+    margin-bottom: 8rem;
+}
+
+nav {
+    background-color: #000000;
+    padding: 8px;
+    text-align: start !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 4px 0 rgba(73, 73, 73, 0.5);
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#video-content {
+    margin:  auto;
+    align-items: center;
+    text-align: center;
+}
+
+#video-container {
+    width: 70vw;
+    height: 70vh;
+    margin:  0 auto;
+
+}
+
+#btn-video {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #82A79E;
+    color: white;
+    margin-top: 30px;
+    font-size: 2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#btn-video a{
+text-decoration: none;
+color: white;
+}
+@media (max-width: 767px) {
+    #video-container {
+        width: 80vw;
+        height: 80%;
+    }
+}

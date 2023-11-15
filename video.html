@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocha</title>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="video.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <h1><a class="navbar-brand" href="#"><img src="img/logo_trocha.png" alt="Logo" class="logo-img"></a></h1>
+        </nav>
+    </header>
+    <main id="video-content">
+        <div id="video-container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CIwisCn2kFU?si=k0pnSWFKz46vtUFc?autoplay=1"
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+        <button id="btn-video">
+            <a id="btn-link" href="https://youtu.be/CIwisCn2kFU">Proximo paso</a>
+        </button>
+
+    </main>
+    <script>
+        setTimeout(function () {
+            var btn = document.getElementById('btn-video');
+            btn.style.opacity = 1;
+                }, 60000);
+    </script>
+</body>
+
+</html>
